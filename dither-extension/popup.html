@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dither Image Processor</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>Dither Image Processor</h1>
+    <input type="file" id="imageInput" accept="image/*">
+    <br>
+    <input type="text" id="imageUrl" placeholder="Enter image URL">
+    <br>
+    <div id="dropZone">Drag and drop an image here</div>
+    <button id="process">Process Image</button>
+    <br>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <img id="outputImage" style="max-width: 100%; display: none;" />
+    <div id="inputSize">Input Image Size: N/A</div>
+    <div id="outputSize">Output Image Size: N/A</div>
+    <script src="popup.js"></script>
+</body>
+</html>
